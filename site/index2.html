@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="salutation='MR/MS'"  >
+<h1>muffakham jah college of engineering and technology </h1>
+<p>please enter your details: </p>
+<p>NAME: <input type="text" ng-model="name"></p>
+<p>ROLLNO: <input type="text" ng-model="rollno"></p>
+<p>E-MAIL: <input type="text" ng-model="mail"></p>
+<p>DOB: <input type="date" ng-model="dob">
+<P>GENDER: <input type="radio" name="preference" ng-model="preference" value="male"/>male
+<input type="radio" name="preference" ng-model="preference"   value="female">female
+<input type="radio" name="preference" ng-model="preference"   value="others">others</P>
+<p> <input type="submit" ng-click="update()" value="submit"> </p>
+<p> Details <span>Name {{name}}</span> &nbsp;  <span>Roll: {{rollno}}</span> &nbsp; <span>E-mail: {{mail}}</span>
+    &nbsp; <span>DoB: {{dob}}</span> &nbsp; <span>Gender: {{preference}}</span>  </p>
+</div>
+
+</body>
+</html>
